@@ -12,7 +12,18 @@ class TopBar extends StatefulWidget {
 }
 
 class _TopbarState extends State<TopBar> {
-  @override
+  bool _togglebutton = false;
+
+  void _toggleFavorite() {
+    setState(() {
+      if (_togglebutton) {
+        _togglebutton = false;
+      } else {
+        _togglebutton = true;
+      }
+    });
+  }
+
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -85,8 +96,10 @@ class _TopbarState extends State<TopBar> {
                 style: ButtonStyle(
                     backgroundColor:
                         MaterialStateProperty.all(Colors.transparent)),
-                child: const Row(children: [
-                  Icon(Icons.circle_outlined),
+                child: Row(children: [
+                  _togglebutton
+                      ? Icon(Icons.circle_outlined)
+                      : Icon(Icons.circle),
                   Text("  Everyone can reply",),
                 ]),
               ),
