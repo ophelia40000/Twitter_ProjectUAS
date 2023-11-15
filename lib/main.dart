@@ -1,24 +1,21 @@
 import 'package:flutter/material.dart';
+import 'my_theme.dart';
+import 'pages/main_page.dart';
 
-void main(){
-  runApp(MaterialApp(
-    title: "Twitter",
-    home: MyWidget(),
-  ));
+void main() {
+  runApp(const MyApp());
 }
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
-      body: Center(
-        child: Text("Halo Semua",style: TextStyle(
-          color: Colors.white,
-        ),),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: MyTheme.theme,
+      title: 'Twitter',
+      home: const MainPage(),
     );
   }
 }
