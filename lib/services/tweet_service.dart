@@ -4,6 +4,21 @@ class TweetService {
   static List<TweetModel> getTweet() {
     return [
       TweetModel(
+        namaPengguna: 'Yupi_Hunter😺',
+        username: 'KucingGeng',
+        body:
+            'Ayo Sini Gelud',
+        url: '',
+        image: ['assets/images/image2.jpeg',],
+        verified: 'no',
+        otomatis: '',
+        createdAt: DateTime.now(),
+        comment: ['NESVERLAND', 'Marvel', 'Penguin🐧'],
+        retweet: ['NESVERLAND', 'Marvel'],
+        like: ['NESVERLAND', 'Marvel'],
+        view: 2200,
+      ),
+      TweetModel(
         namaPengguna: 'Rocky_Ackerman🍉',
         username: 'NESVERLAND',
         body:
