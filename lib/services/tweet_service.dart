@@ -54,7 +54,7 @@ class TweetService {
         body:
             'Apa kau bang? kok liat sini wkwkwk',
         url: '',
-        image: ['assets/images/image2.jpeg',],
+        image: ['assets/images/image2.jpg',],
         verified: 'yes',
         otomatis: '',
         createdAt: DateTime.now(),
