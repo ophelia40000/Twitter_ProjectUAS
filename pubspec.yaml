@@ -59,9 +59,19 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+    assets:
+    - assets/images/Twitter_salelist/tbg.jpeg
+    - assets/images/Twitter_salelist/tbm.png
+    - assets/images/Twitter_salelist/tby.png
+    - assets/images/Twitter_carousel_slide/cat_cart.jpg
+    - assets/images/Twitter_carousel_slide/cat_ok.jpg
+    - assets/images/Twitter_carousel_slide/elon_tweet.png
+    - assets/images/Twitter_salelist/nb.png
+    - assets/images/Twitter_salelist/sb.png
+    - assets/images/Twitter_salelist/verif_biru.png
+    - assets/images/Twitter_salelist/verif_emas.png
+    - assets/images/Twitter_salelist/verif_spotify.png
+    - assets/images/Twitter_salelist/verif_netflix.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
